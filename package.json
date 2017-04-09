@@ -3,6 +3,7 @@
     "description": "Simple events API.",
     "version": "1.0.0",
     "author": "Brandon Sedgwick <bmsedgwick@gmail.com>",
+    "license": "MIT",
     "contributors": [],
     "repository": {
         "type": "git",
