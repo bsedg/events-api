@@ -9,7 +9,7 @@ Swagger api [location](./config/swagger.yaml)
 docker build -t events-api:0.0.1 .
 
 # run docker
-docker run -it events-api:0.0.1 -p 8080:8000 -d 
+docker run -it -p 8080:8000 -d events-api:0.0.1
 ```
 
 Then do a simple GET HTTP request on `/v1/events`.
