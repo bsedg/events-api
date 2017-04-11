@@ -1,4 +1,4 @@
-from node:latest
+FROM node:latest
 
 RUN groupadd -r nodejs \
    && useradd -m -r -g nodejs nodejs
