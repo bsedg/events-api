@@ -1,0 +1,7 @@
+box: wercker-labs/docker
+build:
+  steps:
+    - script:
+        name: build the container
+        code: |
+          sudo -E docker build -t bsedg/events-api .
