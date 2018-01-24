@@ -1,41 +1,39 @@
 {
-    "name": "events-api",
-    "description": "Simple events API.",
-    "version": "1.0.0",
-    "author": "Brandon Sedgwick <bmsedgwick@gmail.com>",
-    "license": "MIT",
-    "contributors": [],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/bsedg/events-api.git"
-    },
-    "bugs": "http://github.com/bsedg/events-api/issues",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org"
-    },
-    "dependencies": {
-        "express": "^4.0.0",
-        "body-parser": "^1.15.0",
-        "swaggerize-express": "^4.0.0",
-        "swagmock": "~0.0.2"
-    },
-    "devDependencies": {
-        "eslint": "^2",
-        "istanbul": "~0.4.3",
-        "is-my-json-valid": "^2.13.1",
-        "js-yaml": "^3.2.6",
-        "supertest": "^1.2.0",
-        "swagger-parser": "^3.4.1",
-        "tape": "^4"
-    },
-    "scripts": {
-        "test": "tape 'tests/**/*.js'",
-        "cover": "istanbul cover tape -- 'tests/**/*.js'",
-        "lint": "eslint .",
-        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.yaml'"
-    },
-    "generator-swaggerize": {
-        "version": "3.1.0"
-    },
-    "main": "./server"
+  "name": "conduit-node",
+  "version": "1.0.0",
+  "description": "conduit on node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gothinkster/productionready-node-api.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "cors": "2.7.1",
+    "ejs": "2.4.1",
+    "errorhandler": "1.4.3",
+    "express": "4.13.4",
+    "express-jwt": "3.3.0",
+    "express-session": "1.13.0",
+    "jsonwebtoken": "7.1.9",
+    "method-override": "2.3.5",
+    "methods": "1.1.2",
+    "mongoose": "4.4.10",
+    "mongoose-unique-validator": "1.0.2",
+    "morgan": "1.7.0",
+    "passport": "0.3.2",
+    "passport-local": "1.0.0",
+    "request": "2.69.0",
+    "slug": "0.9.1",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }

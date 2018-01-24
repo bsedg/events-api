@@ -1,16 +1,13 @@
-FROM node:latest
+FROM node:8-alpine as builder
 
-RUN groupadd -r nodejs \
-   && useradd -m -r -g nodejs nodejs
+RUN mkdir /tmp/app
+WORKDIR /tmp/app
 
-USER nodejs
+COPY package.json /tmp/app
+RUN npm install
+RUN mkdir /app 
+RUN cp -R ./node_modules /app
 
-RUN mkdir -p /home/nodejs/app
-WORKDIR /home/nodejs/app
-
-COPY package.json .
-RUN npm install --production
+WORKDIR /app 
 
 COPY . .
-
-CMD ["npm", "start"]
