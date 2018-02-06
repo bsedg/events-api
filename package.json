@@ -1,12 +1,12 @@
 {
-  "name": "conduit-node",
+  "name": "events-api",
   "version": "1.0.0",
-  "description": "conduit on node",
+  "description": "Events API for users to document article like events.",
   "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
     "dev": "nodemon ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no tests yet\" && exit 0"
   },
   "repository": {
     "type": "git",
