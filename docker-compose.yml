@@ -7,7 +7,7 @@ services:
       appnetwork:
         aliases:
           - db
-  web:
+  api:
     build:
       context: .
     command: npm run start
@@ -18,7 +18,9 @@ services:
     depends_on:
       - db
     networks:
-      - appnetwork
+      appnetwork:
+        aliases:
+          - eventsapi
 
 networks:
   appnetwork:
