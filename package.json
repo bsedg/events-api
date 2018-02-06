@@ -10,9 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gothinkster/productionready-node-api.git"
+    "url": "git+https://github.com/bsedg/events-api.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "1.15.0",
     "cors": "2.7.1",
