@@ -1,22 +1,22 @@
 {
-  "name": "conduit-node",
+  "name": "events-api",
   "version": "1.0.0",
-  "description": "conduit on node",
+  "description": "Events API for users to document article like events.",
   "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
     "dev": "nodemon ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no tests yet\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gothinkster/productionready-node-api.git"
+    "url": "git+https://github.com/bsedg/events-api.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "1.15.0",
     "cors": "2.7.1",
-    "ejs": "2.4.1",
+    "ejs": "2.5.5",
     "errorhandler": "1.4.3",
     "express": "4.13.4",
     "express-jwt": "3.3.0",
